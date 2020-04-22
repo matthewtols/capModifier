@@ -14,7 +14,7 @@ var openFile = function(event) {
 document.getElementById("submit").addEventListener("click", logit)
 function logit() {
   var count, beingSearched = "";
-  for (count in theFile) {
+  for (count; theFile.length; count++) {
     beingSearched = theFile[count].key
     if (beingSearched == "salaryCap") {
       console.log("found")
