@@ -1,4 +1,4 @@
-
+var theFile;
 
 var openFile = function(event) {
   var input = event.target;
