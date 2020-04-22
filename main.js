@@ -13,7 +13,7 @@ var openFile = function(event) {
 
 document.getElementById("submit").addEventListener("click", logit)
 function logit() {
-  theFile.stringify()
+  JSON.stringify(theFile)
   var theStrings = theFile.search('{"key": "salaryCap","value": ')
   var count = 0
   for (count; count<1000; count++) {
