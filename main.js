@@ -6,7 +6,7 @@ var openFile = function(event) {
   var reader = new FileReader();
   reader.onload = function(){
     var text = reader.result;
-    theFile = (reader.result.substring(75000, 90000));
+    theFile = (reader.result.substring(15000, 16000));
   };
   reader.readAsText(input.files[0]);
 };
