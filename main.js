@@ -16,8 +16,6 @@ function logit() {
   var count, beingSearched = "";
   for (count; theFile.length; count++) {
     beingSearched = theFile.key;
-    if (beingSearched == "salaryCap") {
-      console.log("found")
-    }
+    console.log(beingSearched)
   }
 }
