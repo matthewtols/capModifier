@@ -15,7 +15,7 @@ document.getElementById("submit").addEventListener("click", logit)
 function logit() {
   var count, beingSearched = "";
   for (count; theFile.length; count++) {
-    beingSearched = theFile.key[count]
+    beingSearched = theFile.key;
     if (beingSearched == "salaryCap") {
       console.log("found")
     }
