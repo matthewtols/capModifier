@@ -21,8 +21,6 @@ function logit() {
     var THESTRING = theFile.slice(theStrings, stringy)
     var breakingLoop = THESTRING.lastIndexOf("}")
     if (breakingLoop !== -1) {break;}
-    console.log(THESTRING + "1")
-    console.log(theStrings + "2")
-    console.log(stringy + "3")
-  }
+    
+  }console.log(theFile)
 }
