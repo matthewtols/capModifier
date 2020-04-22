@@ -1,4 +1,4 @@
-var thefile;
+var thefile, i;
 
 var openFile = function(event) {
   var input = event.target;
@@ -13,5 +13,11 @@ var openFile = function(event) {
 
 document.getElementById("submit").addEventListener("click", logit)
 function logit() {
-  console.log(theFile)
+  var count, beingSearched = "";
+  for (count in theFile) {
+    beingSearched = theFile[count].key
+    if (beingSearched == "salaryCap") {
+      console.log("found")
+    }
+  }
 }
