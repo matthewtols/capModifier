@@ -14,8 +14,6 @@ var openFile = function(event) {
 document.getElementById("submit").addEventListener("click", logit)
 function logit() {
   var count, beingSearched = "";
-  for (count; theFile.length; count++) {
     beingSearched = theFile.key;
     console.log(beingSearched)
-  }
 }
