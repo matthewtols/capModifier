@@ -13,12 +13,11 @@ var openFile = function(event) {
 
 document.getElementById("submit").addEventListener("click", logit)
 function logit() {
-  JSON.stringify(theFile)
+  //JSON.stringify(theFile)
   var theStrings = theFile.search('{"key": "salaryCap","value": ')
   var count = 0
   for (count; count<1000; count++) {
     var stringy = theStrings + count + 26;
-    var breaker = "}"
     var THESTRING = theFile.slice(theStrings, stringy)
     var breakingLoop = THESTRING.lastIndexOf("}")
     if (breakingLoop !== -1) {break;}
