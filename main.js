@@ -1,4 +1,4 @@
-var thefile, i;
+
 
 var openFile = function(event) {
   var input = event.target;
@@ -13,7 +13,14 @@ var openFile = function(event) {
 
 document.getElementById("submit").addEventListener("click", logit)
 function logit() {
-  var count, beingSearched = "";
-    beingSearched = theFile.key;
-    console.log(beingSearched)
+  theFile.stringify()
+  var theStrings = theFile.search('{"key": "salaryCap","value": ')
+  var count = 0
+  for (count; count<1000; count++) {
+    var stringy = theStrings + count + 26;
+    var breaker = "}"
+    var THESTRING = theFile.slice(theStrings, stringy)
+    var breakingLoop = THESTRING.lastIndexOf("}")
+    if (breakingLoop !== -1) {break;}
+    console.log(THESTRING
 }
