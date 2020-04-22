@@ -23,4 +23,5 @@ function logit() {
     var breakingLoop = THESTRING.lastIndexOf("}")
     if (breakingLoop !== -1) {break;}
     console.log(THESTRING)
+  }
 }
