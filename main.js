@@ -1,11 +1,11 @@
-var theFile;
+var theFile, text;
 
 var openFile = function(event) {
   var input = event.target;
 
   var reader = new FileReader();
   reader.onload = function(){
-    var text = reader.result;
+    text = reader.result;
     theFile = (reader.result.substring(160000, 180000));
   };
   reader.readAsText(input.files[0]);
@@ -22,5 +22,5 @@ function logit() {
     var breakingLoop = THESTRING.lastIndexOf("}")
     if (breakingLoop !== -1) {break;}
     
-  }console.log(theFile)
+  }console.log(text)
 }
